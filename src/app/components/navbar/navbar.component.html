@@ -1,0 +1,38 @@
+<ul class="navbar-nav ml-auto text-right">
+    <li class="nav-item"
+        [ngClass]="{'active': menuItem === 'all'}">
+        <a  class="nav-link"
+            (click)="menuPhotos('all')"
+            >
+            All <span class="sr-only">(current)</span>
+        </a>
+    </li>
+    <li class="nav-item" [ngClass]="{'active': menuItem === 'branding'}">
+        <a 
+        class="nav-link" 
+        (click)="menuPhotos('branding')"
+        >
+        Branding
+    </a>
+    </li>
+    <li class="nav-item" [ngClass]="{'active': menuItem === 'web'}">
+        <a  class="nav-link"
+            (click)="menuPhotos('web')"
+            >Web</a>
+    </li>
+    <li class="nav-item" [ngClass]="{'active': menuItem === 'photography'}">
+        <a class="nav-link"
+          (click)="menuPhotos('photography')"
+          >Photography</a>
+    </li>
+    <li class="nav-item" [ngClass]="{'active': menuItem === 'app'}">
+        <a class="nav-link"
+         (click)="menuPhotos('app')"
+         >App</a>
+    </li>
+    <li class="nav-item">
+        <a  class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <span class="icon-search"></span>
+        </a>
+    </li>
+</ul>

@@ -1,1 +1,191 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";
+
+@font-face {
+    font-family: 'monserrat';
+    src: url('assets/lib/fonts/monserat/Montserrat-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'monserrat-bold';
+    src: url('assets/lib/fonts/monserat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'questrial';
+    src: url('assets/lib/fonts/questrial/Questrial-Regular.ttf');
+}
+
+
+
+:root{
+    --bg-pink: #ff6666;
+    --bg-black: #666666;
+    --bg-white: #cccccc;
+}
+
+button{
+    color: var(--bg-pink);
+    border-radius: 0px !important;
+    font-size: 13px;
+    font-family: 'questrial';
+    &.btn-pink{
+        background-color: var(--bg-pink) !important;
+        color: white !important;
+    }
+}
+
+.nav-item{
+    display: block;
+    padding: 2px 25px;
+    &:hover{
+        a{
+            color: var(--bg-pink) !important;
+        }
+    }
+    &.active{
+        background-color: var(--bg-pink);
+        a{
+            color: white !important;
+        }
+    }
+}
+
+
+.wallpapper{
+    position: relative;
+    background-color: var(--bg-pink);
+    display: block;
+    margin:auto;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    h2,p{
+        position:relative;
+        color: white;
+        text-align: center;
+    }
+    p{
+        font-size: 16px;
+        font-family: 'questrial';
+        top:250px;
+        letter-spacing: 200;
+    }
+    h2{
+        font-size: 39px;
+        font-family: 'monserrat-bold';
+        top:200px;
+        letter-spacing: 300;
+    }
+    button{
+        position: relative;
+        max-width: 200px;
+        margin:auto;
+        display: block;
+        top:270px;
+        font-family: 'questrial';
+        background: white;
+        color: var(--bg-pink) !important;
+        letter-spacing: 200;
+    }
+}
+
+.menu{
+    display: block;
+    max-width: 700px;
+    margin:auto;
+    margin-top:10px;
+    ul{ 
+        display: flex !important;
+        flex-wrap: wrap !important;
+        flex-direction: inherit !important;
+    }
+    li{
+        display: initial;
+        margin:auto;
+        cursor: pointer;
+        a{
+            color: var(--bg-black) !important;
+            font-size: 14px;
+            font-family: 'questrial';
+        }
+    }
+}
+
+.footer{
+    padding: 25px 15px;
+    p{
+        color: var(--bg-white);
+        text-align: center;
+        font-family: 'questrial';
+        font-size: 13px;
+        letter-spacing: 5px;
+        span{
+            color: var(--bg-pink)
+        }
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 300px;
+        margin:auto;
+        text-align: center;
+        color: var(--bg-white);
+        list-style-type: none;
+        li{
+            margin:auto;
+            text-align: center;
+            padding: 5px 10px;
+        }
+    }
+}
+
+.card{
+    .card-img-overlay{
+        opacity: 0;
+    }
+}
+
+.card:hover{
+    background-color: var(--bg-pink);
+    cursor:pointer;
+    img{
+        opacity: .3;
+        transition: all .5s ease-in-out;
+    }
+    h5{
+        font-size: 18px;
+        font-family: 'monserrat';
+        color:white;
+        display:block;
+        margin-top:50px;
+        text-align: center;
+    }
+    .card-img-overlay{
+        opacity: 1;
+    }
+    .linea{
+        display: block;
+        height:1px;
+        background-color: white;
+        width: 80%;
+        margin:auto;
+        margin-top:20px;
+    }
+    .type{
+        color:white;
+        display: block;
+        margin:auto;
+        text-align: center;
+        font-size: 18px;
+        margin-top:50px;
+        font-family: 'monserrat';
+    }
+}
